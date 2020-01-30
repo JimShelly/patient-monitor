@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Troubleshooting - Exercise 1</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+      integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <script>
+      const letters = 'abcdefghijklmnopqrstuvwxyz'.split('');
+
+      const isPangram = input => {
+        let result = document.querySelector('#result');
+        result.innerHTML = `The result is: `;
+      };
+    </script>
+
+    <!--HTML Code goes here.-->
+    <fieldset>
+      <form class="pure-form">
+        <legend>Exercise 1 - Pangram</legend>
+        <p>
+          A pangram (Greek: παν γράμμα, pan gramma, "every letter") or
+          holoalphabetic sentence is a sentence using every letter of a given
+          alphabet at least once. Pangrams have been used to display typefaces,
+          test equipment, and develop skills in handwriting, calligraphy, and
+          keyboarding. The best-known English pangram is "The quick brown fox
+          jumps over the lazy dog". It has been used since at least the late
+          19th century, was utilized by Western Union to test Telex / TWX data
+          communication equipment for accuracy and reliability,[1] and is now
+          used by a number of computer programs (most notably the font viewer
+          built into Microsoft Windows) to display computer fonts.
+        </p>
+        <p>
+          Write a JavaScript program that determines if what you type in the
+          text box is a pangram.
+        </p>
+        <input
+          type="text"
+          id="txt1"
+          class="pure-input-1-2"
+          placeholder="The quick brown fox jumps over the lazy dog"
+        />
+
+        <input
+          type="button"
+          class="pure-button"
+          onclick="isPangram(document.getElementById('txt1').value);"
+          value="Add"
+        />
+        <div id="result">The result is:</div>
+      </form>
+    </fieldset>
+  </body>
+</html>
